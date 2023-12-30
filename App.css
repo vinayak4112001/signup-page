@@ -1,0 +1,174 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background:linear-gradient(#2a7086, rgb(214, 214, 214));
+}
+
+.loginContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35em;
+  height: 70vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin: 5px;
+}
+.input-container input{
+  height: .5em;
+  width: 15em;
+  border-radius: 5px;
+  border-width: 5px;
+  margin:10px;
+  
+  border:white;
+  box-shadow: 0 0 6px #2a7086;
+  outline: none;
+  padding:10px;
+  font-size: 20px;
+}
+input:focus{   
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, #2a7086;
+  outline: 0 none;
+}
+a{
+  color:#2a7086;
+  font-weight: 500;
+  margin: 5px;
+  cursor: pointer;
+  align-self: baseline;
+  margin-left: 40px;
+}
+.loginBut {
+  height: 3em;
+  width: 24em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  margin-top: 25px;
+  border-radius: 15px;
+  background:#2a7086;
+  border: none;
+  transition: all .2s ease-in-out;
+}
+.loginBut:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgb(199, 199, 199);
+}
+.loginBut p{
+  color:white;
+  font-size: 20px;
+  margin-top: 13px;
+}
+.siG{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:18px;
+  height: 4em;
+  width: 17em;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  border-color:  whitesmoke;
+  box-shadow: 5px 5px lightgrey;
+  border-width: 1px;
+  transition: all .2s ease-in-out;
+}
+.siG:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgb(199, 199, 199);
+  cursor: pointer;
+}
+.siG p{
+  font-size: 20px;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+  align-items: center;
+  position: relative;
+  float: inline-start;
+  padding: 0;
+  justify-content: center;
+  
+}
+.siF{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:18px;
+  height: 4em;
+  width: 17em;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  border-color:  rgb(255, 255, 255);
+  border-width: 3px;
+  transition: all .2s ease-in-out;
+}
+.siF:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgb(199, 199, 199);
+  cursor: pointer;
+}
+.siF p{
+  font-size: 20px;
+}
+.p {
+  text-align: center;
+ }
+.text-color-grey{
+  color: grey;
+}
+.slide{
+  width: 17em;
+  height: 50vh;
+  
+  position:absolute;
+  transition: 1s;
+}
+.item-start{
+  /* position:relative; */
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35em;
+  height: 50vh;
+  background-color: #ADD8E6;
+  border-radius: 15px;
+}
+/* Carousel.css */
+.carousel-container {
+  position: relative;
+}
+
+.slide {
+  width: 10%; /* Adjust this based on your design */
+  height: 25px; /* Adjust this based on your design */
+}
+
+.nav {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.arrow {
+  font-size: 24px; /* Adjust this based on your design */
+  cursor: pointer;
+}
